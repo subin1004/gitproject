@@ -9,6 +9,8 @@ import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 
 import com.subing.myapplication.databinding.ActivityMainBinding;
 
@@ -25,6 +27,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+    }
+
+    // 버튼으로 답 입력
+    public void onclick(View view) {
+        binding.etA.append(((Button)view).getText());
     }
 
     public void onClickStart(View view) {
