@@ -124,4 +124,119 @@
 
     </LinearLayout>
 
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="3"
+        android:useDefaultMargins="true">
+
+        <Button
+            android:id="@+id/btn_1"
+            android:backgroundTint="#9CCC65"
+            android:width="100dp"
+            android:height="70dp"
+            android:textSize="8pt"
+            android:onClick="onclick"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/btn_2"
+            android:backgroundTint="#9CCC65"
+            android:width="100dp"
+            android:height="70dp"
+            android:textSize="8pt"
+            android:onClick="onclick"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/btn_3"
+            android:backgroundTint="#9CCC65"
+            android:width="100dp"
+            android:height="70dp"
+            android:textSize="8pt"
+            android:onClick="onclick"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/btn_4"
+            android:backgroundTint="#FFA726"
+            android:width="100dp"
+            android:height="70dp"
+            android:textSize="8pt"
+            android:onClick="onclick"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/btn_5"
+            android:backgroundTint="#FFA726"
+            android:width="100dp"
+            android:height="70dp"
+            android:textSize="8pt"
+            android:onClick="onclick"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/btn_6"
+            android:backgroundTint="#FFA726"
+            android:width="100dp"
+            android:height="70dp"
+            android:textSize="8pt"
+            android:onClick="onclick"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/btn_7"
+            android:backgroundTint="#EF5350"
+            android:width="100dp"
+            android:height="70dp"
+            android:textSize="8pt"
+            android:onClick="onclick"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/btn_8"
+            android:backgroundTint="#EF5350"
+            android:width="100dp"
+            android:height="70dp"
+            android:textSize="8pt"
+            android:onClick="onclick"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/btn_9"
+            android:backgroundTint="#EF5350"
+            android:width="100dp"
+            android:height="70dp"
+            android:textSize="8pt"
+            android:onClick="onclick"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:backgroundTint="#7E57C2"
+            android:width="100dp"
+            android:height="70dp"
+            android:textSize="8pt"
+            android:text="확인" />
+
+        <Button
+            android:id="@+id/btn_0"
+            android:backgroundTint="#7E57C2"
+            android:width="100dp"
+            android:height="70dp"
+            android:textSize="8pt"
+            android:onClick="onclick"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:backgroundTint="#7E57C2"
+            android:width="100dp"
+            android:height="70dp"
+            android:textSize="8pt"
+            android:text="취소" />
+
+    </GridLayout>
+
 </LinearLayout>
