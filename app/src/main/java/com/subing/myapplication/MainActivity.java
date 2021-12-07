@@ -69,15 +69,15 @@ public class MainActivity extends AppCompatActivity {
             // tv: Count & 점수 출력
             if(msg.what==PROGRESSBAR_START){
                 if(binding.progressBar.getProgress() < binding.progressBar.getMax()){
-//                    bt_ok.setClickable(true);
-//                    bt_start.setClickable(false);
+                    binding.btnOk.setClickable(true);
+                    binding.btnStart.setClickable(false);
                     binding.progressBar.setProgress(binding.progressBar.getProgress()+1);
                     sendEmptyMessageDelayed(PROGRESSBAR_START, 1000);
                 }
                 else
                 {
-//                    bt_ok.setClickable(false);
-//                    bt_start.setClickable(true);
+                    binding.btnOk.setClickable(false);
+                    binding.btnStart.setClickable(true);
                 }
             }
 
