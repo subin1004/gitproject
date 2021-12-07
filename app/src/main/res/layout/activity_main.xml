@@ -114,6 +114,14 @@
             android:max="60"
             android:progress="0"/>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:gravity="center"
+            android:text="남은 시간이 표시됩니다."
+            android:id="@+id/tv_last"/>
+
     </LinearLayout>
 
 </LinearLayout>
