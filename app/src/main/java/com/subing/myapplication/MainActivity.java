@@ -14,8 +14,6 @@ import android.widget.EditText;
 
 import com.subing.myapplication.databinding.ActivityMainBinding;
 
-import java.util.Random;
-
 public class MainActivity extends AppCompatActivity {
     static final int PROGRESSBAR_START=1;
     static final int WHAT_HANDLER_MSG_COUNT =2;
@@ -36,26 +34,13 @@ public class MainActivity extends AppCompatActivity {
         binding.etA.append(((Button)view).getText());
     }
 
-    // makeQuiz(): 랜덤 값으로 문제 출력하고 결과 return
-    public int makeQuiz(){
-        Random random = new Random();
-        int a = random.nextInt(9) + 1;
-        int b = random.nextInt(9) + 1;
-        int result = a * b;
-
-        EditText et_q = (EditText) findViewById(R.id.et_q);
-        et_q.setText(a+" * "+b);
-
-        return result;
-    }
-
     public void onClickStart(View view) {
         binding.progressBar.setProgress(0);
         handler.sendEmptyMessage(PROGRESSBAR_START);
 
         // 시작과 동시에 게임 세팅
         binding.etCount.setText("0");
-        result = makeQuiz();
+        //result = makeQuiz();
 
         // 프로그래스 바 Thread
         Thread th_count = new Thread("count thread"){
